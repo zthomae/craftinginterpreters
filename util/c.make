@@ -5,6 +5,8 @@
 # NAME         Name of the output executable (and object file directory).
 # SOURCE_DIR   Directory where source files and headers are found.
 
+CC=gcc-10
+
 ifeq ($(CPP),true)
 	# Ideally, we'd add -pedantic-errors, but the use of designated initializers
 	# means clox relies on some GCC/Clang extensions to compile as C++.
